@@ -1,5 +1,7 @@
 # ImgApp
 
+<a href="https://mosh-media.github.io/imgApp/index.html#/upload">View demo</a>
+
 ## Project summary
 Client side image uploading using Angular2+ featuring the following:
 <ul>
