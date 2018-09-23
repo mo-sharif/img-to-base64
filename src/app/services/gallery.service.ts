@@ -35,7 +35,7 @@ export class GalleryService {
     //console.log(localStorageImage.images);
     //let newImg = "data:image/jpeg;base64," + localStorageImage.images;
     //let imagePath = this._sanitizer.bypassSecurityTrustResourceUrl(newImg);
-    return localStorageImage == null ? [] : localStorageImage.images;
+    return localStorageImage.images == null ? [] : localStorageImage.images;
         //return this.images;
   }
 
