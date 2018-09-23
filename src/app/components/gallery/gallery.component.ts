@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleryService } from '../../services/gallery.service';
 import { Images } from '../../classes/images';
-// Base 64 IMage display issues with unsafe image
-//import { DomSanitizer } from '@angular/platform-browser';
+import { GalleryService } from '../../services/gallery.service';
 
 @Component({
   selector: 'app-gallery',
@@ -11,9 +9,7 @@ import { Images } from '../../classes/images';
   providers:[GalleryService]
 })
 export class GalleryComponent implements OnInit {
- 
   constructor(private galleryClass: GalleryService) {  }
-  
   ngOnInit() { }
 
 }

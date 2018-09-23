@@ -12,9 +12,7 @@ import { GalleryService } from '../../services/gallery.service';
 })
 
 export class UploadComponent implements OnInit {
-
   constructor(private galleryClass: GalleryService) {  
-   
   }
   ngOnInit() { }
 

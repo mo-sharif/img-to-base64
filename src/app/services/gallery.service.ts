@@ -65,6 +65,10 @@ public addImages(text: string): void {
 }
   //Get local storage and check for nulls
   public getGallery(): Images[] {
+    //set dummy data in locaStorage to avoid null issues
+    if (localStorage.getItem("images") === null) {
+      window.localStorage.setItem("images", '1');
+    }
     
     let localStorageImage = JSON.parse(localStorage.getItem('images'));
     //let newImg = "data:image/jpeg;base64," + localStorageImage.images;
