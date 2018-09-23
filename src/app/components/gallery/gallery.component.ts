@@ -12,28 +12,8 @@ import { Images } from '../../classes/images';
 })
 export class GalleryComponent implements OnInit {
  
- public base64Image;
-//private galleryService: GalleryService
-  constructor() {  
-   
-  }
+  constructor(private galleryClass: GalleryService) {  }
   
-  ngOnInit() {  
-    //this.images=this.galleryService.getGallery();
-    
-  }
-
- /*
-  for(i=0, ; i<len; i++) {
-    let key = localStorage.key(i);
-    let value = localStorage[key];
-    console.log(key + " => " + value);
-    let images = [
-    new Images(1, 'Windstorm'),
-  ];
-}
-  myHero = this.images[0];
-
-*/
+  ngOnInit() { }
 
 }

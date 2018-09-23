@@ -1,14 +1,17 @@
 <!-- gallery.component.html -->
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
+<div class="row">
     <h5 class="card-title">Gallery</h5>
-    <p class="card-text">
-      <li *ngFor="let image of galleryService.getGallery()">
-       <div class="imageWrapper">
-          <button class="removeImage" (click)="removeImage()">remove</button>{{image.text}}
+    <div class="col-md-6" *ngFor="let image of galleryClass.getGallery()">
+      <div class="card">
+        <div class="card-body mx-auto">
+            <div class="col-md-12">
+            <img class="card-img-top"  src="{{image.text}}"/>
+            </div>
+            <div class="col-md-12 mt-3">
+                <button class="btn btn-outline-secondary" type="button" (click)="galleryClass.removeImage(image.id)">Delete me</button>
+            </div>
         </div>
-      </li>
-    </p>
+      </div>
+    </div>
   </div>
-</div>
